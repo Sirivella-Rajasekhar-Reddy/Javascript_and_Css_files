@@ -1,0 +1,39 @@
+//object program in JavaScript
+<!doctype html>
+<html>
+<head>
+<title>object</title>
+</head>
+<body bgcolor="aqua">
+<h1>object in java script</h1>
+ three ways to initialize object elements  :
+<ol>
+<li>by object literal</li>
+<li>object directly (new keyword)</li>
+<li>object constructer</li>
+</ol>
+<h2>by object literal</h2>
+<script>
+var stu={rno:123,name:"rajasekhar",branch:"cse",address:"dharmavaram"}
+document.write(stu.rno + " " + stu.name + " " + stu.branch + " " + stu.address );
+</script>
+<h2>object directly</h2>
+<script>
+var emp=new Object();
+emp.id=343;
+emp.name="raju";
+emp.salery=100000;
+document.write(emp.id + " " + emp.name + " " + emp.salery);
+</script>
+<h2>object constructer</h2>
+<script>
+function Student(rno,name,branch){
+this.rno=rno;
+this.name=name;
+this.branch=branch;
+}
+var rock=new Student(145,"rockstar","cse");
+document.write(rock.rno + " " + rock.name + " " + rock.branch);
+</script>
+</body>
+</html>

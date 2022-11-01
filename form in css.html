@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>form styling in css</title>
+<style>
+body{
+background-color : aqua;
+text-align: center;
+color : white;
+font-family : georgia;
+font-size : 20px;
+}
+
+a{
+color : yellow;
+text-decoration : none;
+}
+
+table{
+width : 225px;
+height : 500px;
+margin : 50px auto ;
+font-family : elephant;
+}
+
+h2{
+color : red;
+font-size : 50px;
+}
+
+input[type="text"] , [type="number"] , [type="date"] , [type ="password"] , [type = "email"] {
+width : 100%;
+height : 20px;
+text-align : center;
+font-size : 15px;
+margin-top : 5px;
+padding : 5px;
+border : 5px solid green ;
+border-radius : 10px;
+}
+
+input[type="radio"] {
+width : 15%;
+height : 20px;
+}
+input[type="submit"] {
+width : 70%;
+height : 40px;
+border : 3px solid white;
+border-weight : bold;
+margin-top :5px;
+padding : 5px;
+border-radius : 30px;
+font-size : 18px ;
+cursor : pointer ;
+}
+input:hover{
+background-color : orange ;
+color : black;
+}
+select:hover{
+background-color : orange ;
+color : black;
+}
+input:focus{
+background-color : orange ;
+outline : none;
+}
+select:focus{
+background-color : orange ;
+outline : none;
+}
+input[type="submit"] : hover{
+background-color : green;
+color:red;
+}
+input[type="submit"] : focus{
+background-color : green;
+color:red;
+}
+</style>
+</head>
+<body>
+<h2>form styling in css </h2>
+<form action ="#"  method="post" >
+<table>
+<tr>
+<td>
+<select class="country">
+<option value="select your country">select your country </option>
+<option value="India">India</option>
+<option value="Westindies">Westindies</option>
+<option value="Japanees">Japanees</option>
+<option value="Newyork">Newyork</option>
+<option value="America">America</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<input type ="text" placeholder="Your first name" class="name">
+</td>
+</tr>
+<tr>
+<td>
+<input type ="text" placeholder="Your last name" class="name">
+</td>
+</tr>
+<tr>
+<td>
+<input type ="text" placeholder="Your email" class="email">
+</td>
+</tr>
+<tr>
+<td>
+<input type ="number" placeholder="Your number" class="number">
+</td>
+</tr>
+<tr>
+<td>
+<input type ="date" name="date of birth"  class="dob">
+</td>
+</tr>
+<tr>
+<td>
+Gender : 
+<input type ="radio" name="gender" value="Mail" class="gender" checked>Male
+<input type ="radio" name="gender" value="Femail" class="gender">Female
+</td>
+</tr>
+<tr>
+<td>
+<input type = "password" name="pass1"placeholder="your password" class="password" >
+</td>
+</tr>
+<tr>
+<td>
+<input type = "password" name="pass2"placeholder="your confirn password" class="password" >
+</td>
+</tr>
+<tr>
+<td>
+<input type ="submit" name ="submit" value="register" class ="register">
+</td>
+</tr>
+</table>
+</form>
+Already registered ? <a href="#" >Login Here</a>
+</body>
+</html>

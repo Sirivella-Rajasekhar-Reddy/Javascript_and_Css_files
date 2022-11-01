@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<title>date and time</title>
+</head>
+<body bgcolor="aqua">
+<h1>date and time in java script</h1>
+<h2>It prints date and time</h2>
+<script>
+var today=new Date();
+document.write(today);
+</script>
+<h2>if you have only date</h2>
+<script>
+var today=new Date();
+var day=today.getDate();
+var month=today.getMonth();
+var year=today.getFullYear();
+document.write(day,"</br>");
+document.write(month,"</br>");
+document.write(year,"</br>");
+document.write(day + "/" +month + "/" + year);
+</script>
+<h2>if you have only time</h2>
+<script>
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+document.write(h +":" + m + ":" + s);
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>Browser object model in javascript</title>
+</head>
+<body bgcolor="aqua" text="red">
+<h1 align="center">Browser object model in javascript</h1>
+<h3>Browser object model in javascript is 6 types</h3>
+<ul>
+<li>window object (alert,confirm,prompt,open(),close(),size ( 1.inner width,2.inner height),setinterval,settimout)</li>
+<li>history object (back,farward)</li>
+</ul>
+<script>
+window.alert("hello");
+alert("hello");
+window.confirm("who are you?");
+confirm("who are you?");
+window.prompt("who are you?");
+prompt("who are you?");
+</script>
+<script>
+function myfunc(){
+open("http://google.com ");
+}
+</script>
+<input type ="button" value="google" onclick="myfunc" />
+<script>
+close();
+</script>
+<script>
+var h=window.innerWidth;
+var v=window.innerheight;
+document.write( h + " " + v);
+</script>
+<script>
+function raju(){
+alert("raju got a job ");
+}
+setInterval(raju(),2000);
+</script>
+<script>
+function great(){
+alert("raju got a job ");
+}
+setTimeOut(great(),5000);
+</script>
+</body>
+</html>

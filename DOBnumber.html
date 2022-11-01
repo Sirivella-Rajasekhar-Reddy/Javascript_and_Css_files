@@ -1,0 +1,32 @@
+// Document object model in java script(cubic number) 
+<!doctype html>
+<html>
+<head>
+<title>Document object model in java script</title>
+</head>
+<body bgcolor="aqua" text="blue">
+<h1>Document object model in java script(DOB) :</h1>
+Defination : With the help of DOM we can add dynamic contact to our web page. update the conatact,structure & style.
+<h3>There are three methods </h3>
+<ol>
+<li>write()</li>
+<li>getElementById()</li>
+<li>getElementByName()</li>
+</ol>
+<h3>write(), getElementById () </h3>
+<script>
+dicument.write("hello rajasekhar");
+</script>
+<script>
+function getcube(){
+var num=document.getElementById("number").value;
+document.write("the answer : " + num*num*num) ;
+}
+</script>
+<form>
+enter number : <input type="text" id="number">
+<input type="button" value="cube of nmber" onclick="getcube()" >
+</form>
+</body>
+</html>
+

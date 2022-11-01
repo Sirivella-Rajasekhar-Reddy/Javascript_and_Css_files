@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<title>form validation</title>
+</head>
+<body bgcolor="aqua" text="red" method="post" action="file.html">
+<h1>form valudation in javascript</h1>
+<ol>
+<li>Password validation (minimum 6 charecters ,password and current password must be same</li>
+<li>Name validation (It has only alphabates ,space)</li>
+<li>Email validation </li>
+<li>Date of birth (it must be <current date </li>
+<li>Mobile number(it has only 10 digits)</li>
+</ol>
+<form name="pass1">
+enter password : <input type="password" name="name1"></br></br>
+enter confirm password : <input type="password" name="name2"></br></br>
+<input type="submit" value="click here" onclick="validpassword()">
+</form>
+<script>
+function validpassword(){
+var raj1=document.pass1.name1.value;
+var craj1=document.pass1.name2.value;
+if(raj1.length<6){
+document.write("the password has 6 characters");
+return false;
+}
+if(raj1==craj1){return true;
+}
+else{
+document.write("password and confirm password must be same");
+return false;
+}
+}
+</script>
+<form name="gift1">
+enter your name : <input type="name" name="raju1" pattern="[a-zA-Z ]{3, }">
+<input type="submit" value="click here" onclick="return validname()">
+</form>
+<script>
+function validname(){
+var good1=document .gift1.raju1.value;
+if(good1="null" || good1=" "){
+document.write("enter correct name");
+return false;
+}
+}
+</script>
+</body>
+</html>

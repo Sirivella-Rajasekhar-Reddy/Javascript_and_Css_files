@@ -1,0 +1,22 @@
+// running time in JavaScript
+<!doctype html>
+<html>
+<head>
+<title>running time</title>
+</head>
+<body bgcolor="aqua">
+<h1>running time in java script</h1>
+<span id="raja"></span>
+<script>
+function getTime(){
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+document.getElementById("raja").innerHTML=h +":" + m + ":" + s ;
+setInterval("getTime()",1000) ;
+}
+getTime () ;
+</script>
+</body>
+</html>

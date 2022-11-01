@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>change text color for every second</title>
+<script>
+setInterval("lachi()" ,1000);
+function lachi(){
+var x = document.getElementById("kavi");
+if(x.style.color == "black")
+x.style.color = "red" ;
+else if(x.style.color == "red")
+x.style.color = "blue" ;
+else if(x.style.color == "blue")
+x.style.color = "yellow" ;
+else if(x.style.color == "yellow")
+x.style.color = "aqua" ;
+else if(x.style.color == "aqua")
+x.style.color = "green" ;
+else if(x.style.color == "green")
+x.style.color = "pink" ;
+else if(x.style.color == "pink")
+x.style.color = "black" ;
+else
+x.style.color = "black" ;
+}
+</script>
+</head>
+<body>
+<h1 id = "kavi" >welcome to my house <h1>
+</body>
+</html>
